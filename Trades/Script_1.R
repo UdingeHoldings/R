@@ -2,12 +2,12 @@
 
 #install.packages('dplyr')
 library(dplyr)
-#install.packages("ggplot2")
+# install.packages("ggplot2")
 library(ggplot2)
 library(readxl)
 
 #all you should do is change the name of the file below, then run the entire code
-File_Name <-
+File_Name <- 
   "eToroAccountStatement - IrvineUdinge - 01-09-2020 - 16-01-2021.xlsx"
 
 Trades <- read_excel(File_Name, sheet = "Closed Positions") %>%
